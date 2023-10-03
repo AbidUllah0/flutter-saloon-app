@@ -1,6 +1,10 @@
+import 'package:barber_saloon_app/views/AppointmentBooking/components/appointment_booking.dart';
 import 'package:barber_saloon_app/views/HomeScreen/home_screen.dart';
 import 'package:barber_saloon_app/views/NearBySaloon/near_by_saloon.dart';
 import 'package:flutter/material.dart';
+
+import '../../Message/message.dart';
+import '../../Profile/profile.dart';
 
 class CustomNavigationBar extends StatefulWidget {
   @override
@@ -11,9 +15,9 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
   List _screens = [
     HomeScreen(),
     NearBySaloon(),
-    Text('Screen 3'),
-    Text('Screen 4'),
-    Text('Screen 5'),
+    AppointmentBooking(),
+    Message(),
+    Profile(),
   ];
 
   int selectedIndex = 0;
